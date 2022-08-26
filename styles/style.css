@@ -1,61 +1,66 @@
 :root {
   --header-background: #67cbf1;
-  --menu-background: #96c96a;
-  --blue: #233160;
+  --menu-background  : #96c96a;
+  --blue             : #233160;
+  --text-white       : #ffffff;
+  --card-background  : #D7F2F2;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin    : 0;
+  padding   : 0;
   box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
+  font-size  : 62.5%;
   font-family: "Roboto", sans-serif;
-  /* font-family: 'Work Sans', sans-serif; */
 }
 
 body {
-  font-size: 1.8rem;
+  font-size  : 1.8rem;
   line-height: 1.5;
-  color: var(--blue);
+  color      : var(--blue);
 }
 
 a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .header {
   background-color: var(--header-background);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 30px;
-  height: 60px;
+  display         : flex;
+  justify-content : space-between;
+  align-items     : center;
+  padding         : 0 30px;
+  height          : 60px;
 }
 
 .header p {
   font-weight: 700;
-  font-size: 2rem;
+  font-size  : 2rem;
 }
 
 .header a {
-  height: 27px;
-  width: 132px;
-  border-radius: 5px;
-  text-align: center;
+  height          : 27px;
+  width           : 132px;
+  border-radius   : 5px;
+  text-align      : center;
   background-color: #f5f5f5;
-  color: var(--blue);
-  font-weight: 700;
-  padding-top: 2.5px;
+  color           : var(--blue);
+  font-weight     : 700;
+  padding-top     : 2.5px;
 }
 
 .main-section-info {
-  max-width: 1200px;
-  display: flex;
-  margin: 60px auto 0 auto;
-  height: 376px;
+  max-width  : 1200px;
+  display    : flex;
+  margin     : 0 auto;
+  padding-top: 30px;
 }
 
 .main-section-info div {
@@ -64,12 +69,12 @@ a {
 
 .main-section-info .section-info-text h1 {
   font-weight: 700;
-  font-size: 3.2rem;
-  margin: 30px 0;
+  font-size  : 3.2rem;
+  margin     : 30px 0;
 }
 
 .main-section-info .section-info-text p {
-  line-height: 2.5rem;
+  line-height  : 2.5rem;
   margin-bottom: 25px;
 }
 
@@ -78,16 +83,85 @@ a {
 }
 
 .section-characters-options ul {
-  display: flex;
-  list-style: none;
-  height: 71px;
-  align-items: center;
+  display        : flex;
+  height         : 71px;
+  align-items    : center;
   justify-content: space-evenly;
-  color: white;
-  font-size: 2rem;
-  font-weight: 500;
+  color          : var(--text-white);
+  font-size      : 2rem;
+  font-weight    : 500;
 }
 
-.section-characters-options li{
+.section-characters-options li {
   cursor: pointer;
+}
+
+.section-characters-cards {
+  min-height      : 250px;
+  background-color: var(--header-background);
+  text-align      : center;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  font-family     : 'Work Sans', sans-serif;
+  color           : var(--text-white);
+  font-size       : 3.2rem;
+  padding         : 30px;
+}
+
+.character-card {
+  background-color: var(--card-background);
+  width           : 287px;
+  height          : 480px;
+  padding         : 12px;
+  display         : flex;
+  flex-direction  : column;
+  align-items     : center;
+  border-radius   : 15px;
+  justify-content : space-between;
+}
+
+.character-card h2 {
+  font-size: 2.4rem;
+  color    : var(--blue);
+}
+
+.character-card picture {
+  width           : 250px;
+  height          : 50%;
+  background-color: var(--text-white);
+  display         : block;
+}
+
+.character-card span {
+  background-color: var(--menu-background);
+  font-size       : 1.6rem;
+  margin-top      : 12px;
+  padding         : 4px;
+  width           : 100px;
+  border-radius   : 5px;
+}
+
+.character-card p {
+  font-size : 1.6rem;
+  color     : var(--blue);
+  margin-top: 8px;
+}
+
+.footer {
+  background-color: var(--menu-background);
+  display         : flex;
+  justify-content : space-around;
+  padding-top     : 30px;
+  color           : var(--text-white);
+}
+
+.footer-subtitle {
+  font-weight: 700;
+  font-size  : 2.2rem;
+}
+
+.footer ul li a {
+  color      : #eeeeee;
+  font-weight: 100;
 }
