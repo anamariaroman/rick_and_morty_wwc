@@ -4,6 +4,10 @@
   --blue             : #233160;
   --text-white       : #ffffff;
   --card-background  : #D7F2F2;
+  --female-background     : pink;
+  --male-background       : #96c96a;
+  --unknown-background    : purple;
+  --genderless-background    : lightgray;
 }
 
 * {
@@ -61,6 +65,8 @@ ul {
   display    : flex;
   margin     : 0 auto;
   padding-top: 30px;
+  flex-wrap  : wrap;
+  justify-content: center;
 }
 
 .main-section-info div {
@@ -82,6 +88,27 @@ ul {
   background-color: var(--menu-background);
 }
 
+.main-section-characters .section-characters-more {
+  background-color: var(--card-background);
+  text-align: center;
+  padding : 2rem 2rem;
+}
+
+.main-section-characters .section-characters-more li {
+  background-color: orange;
+  text-align: center;
+  cursor: pointer;
+  padding : 1rem 2rem;
+  border-radius   : 5px;
+  color: var(--blue);
+  cursor: pointer;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .section-characters-options ul {
   display        : flex;
   height         : 71px;
@@ -94,6 +121,11 @@ ul {
 
 .section-characters-options li {
   cursor: pointer;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .section-characters-cards {
@@ -107,6 +139,7 @@ ul {
   color           : var(--text-white);
   font-size       : 3.2rem;
   padding         : 30px;
+  flex-wrap       : wrap;
 }
 
 .character-card {
@@ -119,6 +152,7 @@ ul {
   align-items     : center;
   border-radius   : 15px;
   justify-content : space-between;
+  margin          : 1rem;
 }
 
 .character-card h2 {
@@ -133,8 +167,11 @@ ul {
   display         : block;
 }
 
+.character-card picture  img {
+  width           : 100%;
+}
+
 .character-card span {
-  background-color: var(--menu-background);
   font-size       : 1.6rem;
   margin-top      : 12px;
   padding         : 4px;
@@ -142,10 +179,32 @@ ul {
   border-radius   : 5px;
 }
 
+.male-background {
+  background-color: var(--male-background);
+}
+
+.female-background {
+  background-color: var(--female-background);
+}
+
+.unknown-background {
+  background-color: var(--unknown-background);
+}
+.genderless-background {
+  background-color: var(--genderless-background);
+}
+
 .character-card p {
   font-size : 1.6rem;
   color     : var(--blue);
   margin-top: 8px;
+}
+
+.character-card ul {
+  list-style: circle;
+  font-size: 1rem;
+  text-align: left;
+  color     : var(--blue);
 }
 
 .footer {
@@ -164,4 +223,9 @@ ul {
 .footer ul li a {
   color      : #eeeeee;
   font-weight: 100;
+}
+
+.error {
+  text-align: center;
+  color: red;
 }

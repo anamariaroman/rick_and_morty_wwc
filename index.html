@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans&display=swap" rel="stylesheet" />
   <title>Rick & Morty for Women Who Code</title>
-  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
 <body>
@@ -20,12 +20,12 @@
   <main class="main">
     <section class="main-section-info">
       <picture>
-        <img src="/images/image 10.png" alt="Image rick and morty" />
+        <img src="./images/image 10.png" alt="Image rick and morty" />
       </picture>
       <div class="section-info-text">
         <h1>How Well Do You Know Rick & Morty?</h1>
         <p>
-          <b>Rick and Morty</b> is an American adult animated science-fiction
+          <strong>Rick and Morty</strong> is an American adult animated science-fiction
           sitcom created by Justin Roiland and Dan Harmon for Cartoon
           Network's nighttime programming block Adult Swim. The series follows
           the misadventures of cynical mad scientist Rick Sanchez and his
@@ -36,34 +36,30 @@
           Though you can enjoy Rick and Morty simply as a zany cartoon with
           some crude humor, you can also dive deeper into the human condition
           and wrestle with the existence of god itself through these
-          characters. <b>So, here you can check them all! </b>
+          characters. <strong>So, here you can check them all! </strong>
         </p>
       </div>
     </section>
     <section class="main-section-characters">
       <div class="section-characters-options">
         <ul>
-          <li>All characters</li>
-          <li>Females</li>
-          <li>Males</li>
-          <li>Alive</li>
-          <li>Dead</li>
+          <li id="all">All characters</li>
+          <li id="females">Females</li>
+          <li id="males">Males</li>
+          <li id="alives">Alive</li>
+          <li id="deads">Dead</li>
         </ul>
       </div>
       <div class="section-characters-cards">
-        <div class="character-card">
-          <h2>Name</h2>
-          <picture>
-            <img src="" alt="">
-          </picture>
-          <span>Female</span>
-          <p>Figma, the world’s first browser-based collaborative interface design tool. Figma, the world’s first
-            browser-based collaborative interface design tool.</p>
-        </div>
         <!-- <p>
           Choose any of the catergories above and learn more about Rick and
           Morty characters.
         </p> -->
+      </div>
+      <div class="section-characters-more">
+        <ul>
+          <li id="more">Get More Characters</li>
+        </ul>
       </div>
     </section>
   </main>
@@ -90,6 +86,7 @@
       <li><a href="">Visit my LinkedIn account!</a></li>
     </ul>
   </footer>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
