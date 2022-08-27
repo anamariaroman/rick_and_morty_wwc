@@ -101,6 +101,12 @@ ul {
   padding : 1rem 2rem;
   border-radius   : 5px;
   color: var(--blue);
+  cursor: pointer;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .section-characters-options ul {
@@ -115,6 +121,11 @@ ul {
 
 .section-characters-options li {
   cursor: pointer;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .section-characters-cards {
